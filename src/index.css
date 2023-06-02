@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden;
+}
+
+
+
+.move{
+  animation-name: move;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(6px);
+  }
+}
+
+
+.circleOuterMove{
+  animation-name: OuterMove;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes OuterMove {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.circleInnerMove{
+  animation-name: InnerMove;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction:reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes InnerMove {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.skillrotateinner{
+  animation-name: skillrotateinner;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes skillrotateinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.skillrotateouter{
+  animation-name: skillrotateouter;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+
+}
+
+@keyframes skillrotateouter {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.bottomanimationUp{
+  animation-name: bottomanimationUp;
+  animation-duration:200ms;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  box-shadow: 0 35px 35px rgba(0,0,0,0.45);
+}
+
+@keyframes bottomanimationUp {
+ 0%{
+    transform: translateY(0%);
+  }
+ 50%{
+    transform: translateY(50%);
+  }
+ 100%{
+    transform: translateY(100%);
+  }
+}
+
+.bottomanimationDown{
+  animation-name: bottomanimationDown;
+  animation-duration:600ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes bottomanimationDown {
+ 100%{
+    transform: translateY(100%);
+  }
+ 50%{
+    transform: translateY(50%);
+  }
+ 0%{
+    transform: translateY(0%);
+  }
+}
